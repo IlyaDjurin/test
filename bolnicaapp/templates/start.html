@@ -17,7 +17,7 @@
       </div>
         <div class="container">
       <div align="left">
-          <h2>Наши врачи</h2> </div>
+          <h2>Наши врачи:</h2> </div>
         </div>
       <div class="row marketing">
 
@@ -27,7 +27,7 @@
                   <h4>{{doctor.name|safe}}</h4>
                   <p>{{doctor.specialization|safe}}</p>
                   <p>{{doctor.info|safe}}</p>
-                  <p> <a class="btn btn-inverse"
+                  <p> <a  class="btn btn-primary"
                        href="{% url 'reception' doctor_id=doctor.id %}">Записаться на прием</a>
                   </p>
             {% endif %}
@@ -38,7 +38,7 @@
                   <h4>{{doctor.name|safe}}</h4>
                   <p>{{doctor.specialization|safe}}</p>
                   <p>{{doctor.info|safe}}</p>
-                  <p> <a class="btn btn-inverse"
+                  <p> <a class="btn btn-primary"
                        href="{% url 'reception' doctor_id=doctor.id %}">Записаться на прием</a>
                   </p>
             {% endif %}
@@ -51,7 +51,7 @@
                   <h4>{{doctor.name|safe}}</h4>
                   <p>{{doctor.specialization|safe}}</p>
                   <p>{{doctor.info|safe}}</p>
-                  <p> <a class="btn btn-inverse"
+                  <p> <a class="btn btn-primary"
                        href="{% url 'reception' doctor_id=doctor.id %}">Записаться на прием</a>
                   </p>
           </div>

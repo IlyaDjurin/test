@@ -35,9 +35,10 @@ class ReceptionView(FormView):
                                      patient_name=fcd['patient_name'],
                                      patient_info=fcd['patient_info'],
                                      doctor=curr_doctor)
-            return render_to_response('reception.html', response_dict)
+            response_dict["norm"] = "Вы записаны на прием"
+            return render_to_response('reception.html', response_dict,)
         else:
-            response_dict["message"]="Вы уже зарегистрированны на это время"
+            response_dict["message"]="Это время уже занято, пожалуйста выберите другое время или дату"
             return render_to_response('reception.html',response_dict,
                           )
 
